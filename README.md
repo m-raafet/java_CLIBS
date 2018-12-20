@@ -57,6 +57,11 @@ i am going to Give you step by step instructions on how to correctly import CLIB
 ## Finished
 now you can clone this repo and try run the project and test if it works or not 
 
+also you can run one of the demos using th follwoing command 
+```
+java -jar WineDemo.jar
+```
+
 
 
 
