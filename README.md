@@ -22,14 +22,14 @@ i am going to Give you step by step instructions on how to correctly import CLIB
     2. next you are you going to open makefile.linux and replace the following 
         ```
         libCLIPSJNI.so : $(OBJS) net_sf_clipsrules_jni_Environment.c
-	    gcc -o libCLIPSJNI.so -fPIC -shared -Wall -I$(JAVA_INCLUDE) -I$(JAVA_INCLUDE_OS) \
-		-lm $(OBJS) net_sf_clipsrules_jni_Environment.c
+	        gcc -o libCLIPSJNI.so -fPIC -shared -Wall -I$(JAVA_INCLUDE) -I$(JAVA_INCLUDE_OS) \
+		    -lm $(OBJS) net_sf_clipsrules_jni_Environment.c
         ```
         with the following but remember add your path not mine.
         ```
         libCLIPSJNI.so : $(OBJS) net_sf_clipsrules_jni_Environment.c
-	    gcc -o libCLIPSJNI.so -fPIC -shared -Wall -I /usr/lib/jvm/java-8-openjdk-amd64/include/linux -I/usr/lib/jvm/java-8-openjdk-amd64/include \
-		-lm $(OBJS) net_sf_clipsrules_jni_Environment.c
+	        gcc -o libCLIPSJNI.so -fPIC -shared -Wall -I /usr/lib/jvm/java-8-openjdk-amd64/include/linux -I/usr/lib/jvm/java-8-openjdk-amd64/include \
+		    -lm $(OBJS) net_sf_clipsrules_jni_Environment.c
         ```
         as you have noticed already I added \linux in one of the paths the order isn't important
     3. then save and try execute the following command again 
